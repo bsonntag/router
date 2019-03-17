@@ -1,0 +1,40 @@
+{
+  "name": "@bsonntag/router",
+  "version": "0.0.0",
+  "description": "A router implementation with React Hooks.",
+  "keywords": [
+    "hook",
+    "hooks",
+    "navigation",
+    "react",
+    "router"
+  ],
+  "repository": "git@github.com:bsonntag/router.git",
+  "license": "MIT",
+  "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
+  "main": "dist/index.js",
+  "scripts": {
+    "bundle": "rm -rf dist && babel src --out-dir dist --ignore **/*.test.js",
+    "bundle:watch": "babel src --out-dir dist --watch --ignore **/*.test.js",
+    "example": "parcel --out-dir build example/index.html",
+    "lint": "eslint src",
+    "version": "npm run bundle && git add dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "eslint": "^5.14.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-seegno": "^12.0.0",
+    "eslint-plugin-react-hooks": "^1.0.2",
+    "parcel": "^1.12.2",
+    "prettier": "^1.16.4",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}
