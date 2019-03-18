@@ -1,11 +1,13 @@
 import { Children } from 'react';
-import match from './match';
+import { matchPath } from './match';
 import useRouter from './use-router';
 
 const Switch = ({ children }) => {
   const { location } = useRouter();
 
-  return Children.toArray(children).find(child => match(child.props, location));
+  return Children.toArray(children).find(child => {
+    return matchPath(location.pathname, child.props);
+  });
 };
 
 export default Switch;

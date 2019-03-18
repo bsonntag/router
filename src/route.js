@@ -1,14 +1,20 @@
-import match from './match';
+import { MatchContext, matchPath } from './match';
+import React from 'react';
 import useRouter from './use-router';
 
-const Route = ({ children, ...rest }) => {
+const Route = ({ children, partial, path }) => {
   const { location } = useRouter();
+  const match = matchPath(location.pathname, { partial, path });
 
-  if (!match(rest, location)) {
+  if (!match) {
     return null;
   }
 
-  return children;
+  return (
+    <MatchContext.Provider value={match}>
+      {children}
+    </MatchContext.Provider>
+  );
 };
 
 export default Route;
