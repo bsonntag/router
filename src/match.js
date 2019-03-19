@@ -29,12 +29,12 @@ export function matchPath(pathname, { partial, path }) {
   }
 
   const paramKeys = getParamKeys(path);
-  const paramValues = match.slice(1);
+  const [url, ...paramValues] = match;
   const params = paramKeys.reduce((params, key, index) => {
     params[key] = paramValues[index];
 
     return params;
   }, {});
 
-  return { params, path };
+  return { params, path, url };
 }
