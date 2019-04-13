@@ -30,10 +30,10 @@ export function matchPath(pathname, { partial, path }) {
 
   const paramKeys = getParamKeys(path);
   const [url, ...paramValues] = match;
-  const params = paramKeys.reduce((params, key, index) => {
-    params[key] = paramValues[index];
+  const params = paramKeys.reduce((result, key, index) => {
+    result[key] = paramValues[index];
 
-    return params;
+    return result;
   }, {});
 
   return { params, path, url };

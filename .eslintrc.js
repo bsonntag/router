@@ -1,12 +1,7 @@
 module.exports = {
-  env: {
-    browser: 1,
-  },
-  extends: ['seegno', 'prettier'],
-  plugins: ['react-hooks'],
+  env: { browser: 1 },
+  extends: ['@bsonntag'],
   rules: {
-    'no-eq-null': 'off',
-    'react/jsx-no-literals': 'off',
-    'react-hooks/rules-of-hooks': 'error',
+    'react/prop-types': 'off',
   },
 };
