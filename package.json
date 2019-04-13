@@ -18,6 +18,8 @@
     "bundle:watch": "babel src --out-dir dist --watch --ignore **/*.test.js",
     "example": "parcel --out-dir build example/index.html",
     "lint": "eslint src",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "version": "npm run bundle && git add dist"
   },
   "devDependencies": {
