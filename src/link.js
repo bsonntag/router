@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import useRouter from './use-router';
 
-const Link = ({ children, to, ...rest }) => {
+const Link = props => {
+  const { children, replace, state, to, ...rest } = props;
   const { navigate } = useRouter();
-
-  function handleClick(event) {
+  const handleClick = useCallback(event => {
     event.preventDefault();
-    navigate({ pathname: to });
-  }
+    navigate({ pathname: to, replace, state });
+  }, [to, replace, state]);
 
   return (
     <a

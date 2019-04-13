@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import useRouter from './use-router';
 
-const Redirect = ({ to }) => {
+const Redirect = ({ replace, state, to }) => {
   const { navigate } = useRouter();
 
   useEffect(() => {
-    navigate({ pathname: to });
+    navigate({ pathname: to, replace, state });
   });
 
   return null;
