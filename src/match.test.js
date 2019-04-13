@@ -7,6 +7,7 @@ describe('matchPath(pathname, route)', () => {
     expect(result).toEqual({
       params: {},
       path: '/foo/bar',
+      url: '/foo/bar',
     });
   });
 
@@ -16,6 +17,7 @@ describe('matchPath(pathname, route)', () => {
     expect(result).toEqual({
       params: { id: '1' },
       path: '/foo/:id',
+      url: '/foo/1',
     });
   });
 
@@ -28,6 +30,7 @@ describe('matchPath(pathname, route)', () => {
     expect(result).toEqual({
       params: {},
       path: '/foo',
+      url: '/foo',
     });
   });
 
@@ -40,6 +43,7 @@ describe('matchPath(pathname, route)', () => {
     expect(result).toEqual({
       params: { id: '1' },
       path: '/foo/:id',
+      url: '/foo/1',
     });
   });
 
