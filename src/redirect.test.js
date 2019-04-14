@@ -10,15 +10,15 @@ describe('Redirect', () => {
     act(() => {
       render(
         <RouterContext.Provider value={routerContext}>
-          <Redirect to={'foo'} replace={'bar'} state={'biz'} />
+          <Redirect to={'foo'} replace={true} state={'bar'} />
         </RouterContext.Provider>
       );
     });
 
     expect(routerContext.navigate).toHaveBeenCalledWith({
       pathname: 'foo',
-      replace: 'bar',
-      state: 'biz',
+      replace: true,
+      state: 'bar',
     });
   });
 });

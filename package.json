@@ -22,6 +22,9 @@
     "test:watch": "jest --watch --notify",
     "version": "npm run bundle && git add dist"
   },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",

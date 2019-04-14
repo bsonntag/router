@@ -1,4 +1,5 @@
 import { RouterContext } from './router-context';
+import PropTypes from 'prop-types';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 
 const getWindowLocation = () => ({
@@ -54,5 +55,7 @@ const Router = ({ children }) => {
     </RouterContext.Provider>
   );
 };
+
+Router.propTypes = { children: PropTypes.node };
 
 export default Router;

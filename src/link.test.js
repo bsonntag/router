@@ -21,14 +21,18 @@ describe('Link', () => {
 
     const { getByText } = render(
       <RouterContext.Provider value={routerContext}>
-        <Link to={'bar'}>baz</Link>
+        <Link to={'bar'} replace={false} state={'baz'}>
+          biz
+        </Link>
       </RouterContext.Provider>
     );
 
-    fireEvent.click(getByText('baz'));
+    fireEvent.click(getByText('biz'));
 
     expect(routerContext.navigate).toHaveBeenCalledWith({
       pathname: 'bar',
+      replace: false,
+      state: 'baz',
     });
   });
 });

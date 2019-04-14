@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from './router-context';
+import PropTypes from 'prop-types';
 
 const Redirect = ({ replace, state, to }) => {
   const { navigate } = useRouter();
@@ -9,6 +10,12 @@ const Redirect = ({ replace, state, to }) => {
   });
 
   return null;
+};
+
+Redirect.propTypes = {
+  replace: PropTypes.bool,
+  state: PropTypes.any,
+  to: PropTypes.string.isRequired,
 };
 
 export default Redirect;

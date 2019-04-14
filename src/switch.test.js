@@ -2,7 +2,6 @@ import { RouterContext } from './router-context';
 import { render } from 'react-testing-library';
 import Switch from './switch';
 import React from 'react';
-import Route from './route';
 
 describe('Switch', () => {
   it('renders only the first matched route', () => {
@@ -13,9 +12,9 @@ describe('Switch', () => {
     const { container } = render(
       <RouterContext.Provider value={routerContext}>
         <Switch>
-          <Route path={'/bar'}>bar</Route>
-          <Route path={'/foo'}>foo</Route>
-          <Route path={'/foo'}>biz</Route>
+          <div path={'/bar'}>bar</div>
+          <div path={'/foo'}>foo</div>
+          <div path={'/foo'}>biz</div>
         </Switch>
       </RouterContext.Provider>
     );
@@ -33,9 +32,9 @@ describe('Switch', () => {
     const { container } = render(
       <RouterContext.Provider value={routerContext}>
         <Switch>
-          <Route path={'/bar'}>bar</Route>
-          <Route>biz</Route>
-          <Route path={'/foo'}>foo</Route>
+          <div path={'/bar'}>bar</div>
+          <div>biz</div>
+          <div path={'/foo'}>foo</div>
         </Switch>
       </RouterContext.Provider>
     );
