@@ -19,7 +19,7 @@
     "example": "parcel --out-dir build example/index.html",
     "lint": "eslint .",
     "test": "jest",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watch --notify",
     "version": "npm run bundle && git add dist"
   },
   "devDependencies": {
