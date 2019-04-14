@@ -1,4 +1,4 @@
-import { matchPath } from './match';
+import matchPath from './match-path';
 
 describe('matchPath(pathname, route)', () => {
   it('matches exact paths', () => {

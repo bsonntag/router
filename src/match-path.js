@@ -1,8 +1,3 @@
-import { createContext, useContext } from 'react';
-
-export const MatchContext = createContext({ match: null });
-export const useMatch = () => useContext(MatchContext);
-
 function getParamKeys(path) {
   const keys = path.match(/:[^/]+/g);
 
@@ -13,7 +8,7 @@ function getParamKeys(path) {
   return keys.map(key => key.replace(':', ''));
 }
 
-export function matchPath(pathname, { partial, path }) {
+export default function matchPath(pathname, { partial, path }) {
   if (path == null) {
     return { path };
   }

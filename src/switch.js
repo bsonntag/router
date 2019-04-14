@@ -1,6 +1,6 @@
 import { Children } from 'react';
-import { matchPath } from './match';
-import useRouter from './use-router';
+import { useRouter } from './router-context';
+import matchPath from './match-path';
 
 const Switch = ({ children }) => {
   const { location } = useRouter();

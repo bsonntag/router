@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import useRouter from './use-router';
+import { useRouter } from './router-context';
 
 const Redirect = ({ replace, state, to }) => {
   const { navigate } = useRouter();

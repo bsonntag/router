@@ -1,5 +1,5 @@
+import { RouterContext } from './router-context';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import RouterContext from './router-context';
 
 const getWindowLocation = () => ({
   hash: window.location.hash,

@@ -1,6 +1,7 @@
-import { MatchContext, matchPath } from './match';
+import { MatchContext } from './match-context';
+import { useRouter } from './router-context';
 import React, { useMemo } from 'react';
-import useRouter from './use-router';
+import matchPath from './match-path';
 
 const Route = ({ children, partial, path }) => {
   const { location } = useRouter();

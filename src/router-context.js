@@ -1,5 +1,4 @@
-import { createContext } from 'react';
+import { createContext, useContext } from 'react';
 
-const RouterContext = createContext();
-
-export default RouterContext;
+export const RouterContext = createContext();
+export const useRouter = () => useContext(RouterContext);
