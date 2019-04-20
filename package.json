@@ -1,6 +1,6 @@
 {
   "name": "@bsonntag/router",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A router implementation with React Hooks.",
   "keywords": [
     "hook",
