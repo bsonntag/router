@@ -1,3 +1,5 @@
 !.*rc.js
 .cache
 build
+coverage
+dist
