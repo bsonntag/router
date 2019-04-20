@@ -17,15 +17,21 @@ function App() {
         <Route path={'/'}>
           <Home />
         </Route>
+
         <Route path={'/about'}>
           <About />
         </Route>
+
         <Redirect to={'/'} />
       </Switch>
     </Router>
   );
 }
 ```
+
+## Documentation
+
+Read the [docs](./docs/README.md).
 
 ## Contributing
 
