@@ -7,5 +7,6 @@ module.exports = {
       'git add',
     ],
     '*.json': ['prettier --write', 'git add'],
+    '*.md': ['prettier --write', 'git add'],
   },
 };
