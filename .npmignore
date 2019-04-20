@@ -1,7 +1,10 @@
+.*rc.js
 .babelrc
 .cache
-.eslintrc.js
+.eslintignore
 build
 coverage
+docs
 example
+jest*
 src
