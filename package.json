@@ -14,8 +14,8 @@
   "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
   "main": "dist/index.js",
   "scripts": {
-    "bundle": "rm -rf dist && babel src --out-dir dist --ignore **/*.test.js && rm dist/*.test.js",
-    "bundle:watch": "babel src --out-dir dist --watch --ignore **/*.test.js",
+    "bundle": "rm -rf dist && babel src --out-dir dist",
+    "bundle:watch": "babel src --out-dir dist --watch",
     "example": "parcel --out-dir build example/index.html",
     "lint": "eslint .",
     "test": "jest",

@@ -1,3 +1,4 @@
 {
+  "ignore": ["**/*.test.js"],
   "presets": ["@babel/env", "@babel/react"]
 }
