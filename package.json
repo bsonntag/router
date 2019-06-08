@@ -20,7 +20,7 @@
     "lint": "eslint .",
     "test": "jest",
     "test:watch": "jest --watch --notify",
-    "version": "npm run bundle && git add dist"
+    "version": "npm run bundle && git add -A dist"
   },
   "dependencies": {
     "prop-types": "^15.7.2"
