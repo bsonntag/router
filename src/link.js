@@ -10,7 +10,7 @@ const Link = props => {
       event.preventDefault();
       navigate({ pathname: to, replace, state });
     },
-    [to, replace, state]
+    [navigate, to, replace, state]
   );
 
   return (

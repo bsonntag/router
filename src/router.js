@@ -31,7 +31,6 @@ const Router = ({ children }) => {
   }, []);
 
   const contextValue = useMemo(() => ({ goBack, location, navigate }), [
-    goBack,
     location,
     navigate,
   ]);
