@@ -1,5 +1,5 @@
 import { RouterContext } from './router-context';
-import { render } from 'react-testing-library';
+import { render } from '@testing-library/react';
 import { useMatch } from './match-context';
 import React from 'react';
 import Route from './route';

@@ -1,5 +1,5 @@
 import { RouterContext } from './router-context';
-import { act, render } from 'react-testing-library';
+import { act, render } from '@testing-library/react';
 import React from 'react';
 import Redirect from './redirect';
 
