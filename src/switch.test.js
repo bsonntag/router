@@ -1,5 +1,5 @@
 import { RouterContext } from './router-context';
-import { render } from 'react-testing-library';
+import { render } from '@testing-library/react';
 import Switch from './switch';
 import React from 'react';
 

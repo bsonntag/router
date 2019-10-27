@@ -1,5 +1,5 @@
 import { RouterContext } from './router-context';
-import { fireEvent, render } from 'react-testing-library';
+import { fireEvent, render } from '@testing-library/react';
 import Link from './link';
 import React from 'react';
 
