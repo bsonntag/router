@@ -1,6 +1,7 @@
 .*rc.js
 .babelrc
 .cache
+.circleci
 .eslintignore
 build
 coverage
