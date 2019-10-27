@@ -1,5 +1,7 @@
 # @bsonntag/router
 
+[![CircleCI](https://circleci.com/gh/bsonntag/router/tree/master.svg?style=svg)](https://circleci.com/gh/bsonntag/router/tree/master)
+
 A router implementation using React Hooks.
 
 ## Usage
